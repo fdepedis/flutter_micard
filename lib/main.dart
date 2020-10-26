@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           //mainAxisSize: MainAxisSize.min,
           //verticalDirection: VerticalDirection.up,
-          //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             CircleAvatar(
@@ -73,52 +73,50 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Container(
-              color: Colors.white,
-              padding: EdgeInsets.all(10.0),
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.phone,
-                    color: Colors.teal,
-                  ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
-                    '+39 329.3671655',
-                    style: TextStyle(
-                      color: Colors.teal.shade900,
-                      fontFamily: 'Source Sans Pro',
-                      fontSize: 20.0,
-                    ),
-                  )
-                ],
+            SizedBox(
+              height: 20.0,
+              width: 150.0,
+              child: Divider(
+                color: Colors.teal.shade100,
+                thickness: 1,
               ),
             ),
-            Container(
-              color: Colors.white,
-              padding: EdgeInsets.all(10.0),
+            Card(
+              //color: Colors.white,
+              //padding: EdgeInsets.all(10.0),
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.email,
-                    color: Colors.teal,
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  '+39 329.3671655',
+                  style: TextStyle(
+                    color: Colors.teal.shade900,
+                    fontFamily: 'Source Sans Pro',
+                    fontSize: 20.0,
                   ),
-                  SizedBox(
-                    width: 10.0,
+                ),
+              ),
+            ),
+            Card(
+              //color: Colors.white,
+              //padding: EdgeInsets.all(10.0),
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  'flavio.depedis@gmail.com',
+                  style: TextStyle(
+                    color: Colors.teal.shade900,
+                    fontFamily: 'Source Sans Pro',
+                    fontSize: 20.0,
                   ),
-                  Text(
-                    'flavio.depedis@gmail.com',
-                    style: TextStyle(
-                      color: Colors.teal.shade900,
-                      fontFamily: 'Source Sans Pro',
-                      fontSize: 20.0,
-                    ),
-                  )
-                ],
+                ),
               ),
             ),
           ],
