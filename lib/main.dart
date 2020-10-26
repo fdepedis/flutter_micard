@@ -45,79 +45,37 @@ class _MyHomePageState extends State<MyHomePage> {
       ),*/
       backgroundColor: Colors.teal,
       body: SafeArea(
-        child: Row(
+        child: Column(
           //mainAxisSize: MainAxisSize.min,
           //verticalDirection: VerticalDirection.up,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //mainAxisAlignment: MainAxisAlignment.spaceBetween,
           //crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Container(
-              width: 100.0,
-              //height: 100.0,
-              //margin: EdgeInsets.only(left: 30.0),
-              //padding: EdgeInsets.all(20.0),
-              color: Colors.red,
-              //child: Text('Container'),
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/flax.jpg'),
             ),
-            SizedBox(
-              //height: 20.0,
-              width: 20.0,
+            Text(
+              'Flavio De Pedis',
+              style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
             ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  width: 100.0,
-                  height: 100.0,
-                  color: Colors.yellow,
-                  //child: Text('Container'),
-                ),
-                Container(
-                  width: 100.0,
-                  height: 100.0,
-                  color: Colors.green,
-                  //child: Text('Container'),
-                ),
-              ],
+            Text(
+              'Flutter Enthusiast Developer',
+              style: TextStyle(
+                fontFamily: 'Source Sans Pro',
+                fontSize: 20.0,
+                color: Colors.teal[100], //color: Colors.shade100,
+                letterSpacing: 2.5,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-            SizedBox(
-              //height: 20.0,
-              width: 20.0,
-            ),
-            Container(
-              width: 100.0,
-              //height: 100.0,
-              color: Colors.blue,
-              //child: Text('Container'),
-            ),
-            /*Container(
-              width: double.infinity,
-              height: 10.0,
-            ),// infinity container*/
           ],
         ),
       ),
-      /*body: Center(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                'You have pushed the button this many times:',
-              ),
-              Text(
-                '$_counter',
-                style: Theme.of(context).textTheme.headline4,
-              ),
-            ],
-          ),
-        ),
-      ),*/
-      /*floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ),*/ // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
