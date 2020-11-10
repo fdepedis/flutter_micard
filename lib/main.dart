@@ -85,6 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
               //color: Colors.white,
               //padding: EdgeInsets.all(10.0),
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              color: Colors.white,
               child: ListTile(
                 leading: Icon(
                   Icons.phone,
